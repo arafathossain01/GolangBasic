@@ -27,7 +27,16 @@ func init() {
 }
 
 // function expression
-var mul = func(a int, b int){
+var mul = func(a int, b int) {
 	z := a * b
-	fmt.Println("Multiplication from function expression: ",z)
+	fmt.Println("Multiplication from function expression: ", z)
+}
+
+// higher order function
+func operation(a int, b int, add func(p int, q int)) {
+	add(a, b) // add func(p int, q int) => call back function
+}
+
+func operation1() func(x int, y int) {
+	return add1
 }

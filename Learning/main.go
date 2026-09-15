@@ -6,8 +6,8 @@ import (
 )
 
 const PI = 3.1416 // Global variable
+
 func main() {
-	fmt.Println("Hello World")
 
 	/*---------Variable----------*/
 
@@ -90,4 +90,16 @@ func main() {
 
 	// function expression
 	mul(10, 20)
+
+	// higher order function
+	operation(10, 20, add1)
+	op := operation1()
+	op(5, 7)
+
+}
+
+// a normal function
+func add1(x int, y int) {
+	z := x + y
+	fmt.Println(z)
 }
