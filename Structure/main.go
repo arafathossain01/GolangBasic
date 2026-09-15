@@ -8,14 +8,14 @@ type User struct {
 	Age  int
 }
 
-// recevier function
+// receiver function
 func (usr User) printDetails() {
 	fmt.Println("Name: ", usr.Name)
 	fmt.Println("Age: ", usr.Age)
 	fmt.Println("First call done.")
 }
 
-// recevier function with parameter
+// receiver function with parameter
 func (usr User) print(a int) {
 	fmt.Println("Name: ", usr.Name)
 	fmt.Println("Age: ", usr.Age)
