@@ -8,7 +8,7 @@ func arrPrint(numbers [3]int){
 	fmt.Println("From function:",numbers)
 }
 func main() {
-	var arrName [3]int
+	var arrName [3]int // size fixed all time
 	arrName[0] = 3
 	arrName[1] = 23
 	fmt.Println(arrName)
